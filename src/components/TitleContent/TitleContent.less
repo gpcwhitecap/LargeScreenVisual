@@ -1,0 +1,40 @@
+.model {
+  /* height: 25%; */
+  height: calc(25% - 4rem);
+  position: relative;
+  margin-bottom: 4rem;
+  &.last-model {
+    height: calc(25% - 3rem);
+    margin-bottom: 3rem;
+  }
+  .modelTitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .selectbox {
+      font-size: 0.75rem;
+      color: #ffffff;
+      span {
+        display: inline-block;
+        position: relative;
+      }
+      .time {
+        cursor: pointer;
+      }
+      .time::after {
+        content: "";
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.375rem;
+        /* background: url(../images/arr-down.svg) no-repeat; */
+        margin-left: 0.5rem;
+      }
+      .img {
+        margin-left: 0.75rem;
+        width: 6.375rem;
+      }
+    }
+  }
+}
